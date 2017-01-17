@@ -982,11 +982,11 @@
             startY = Math.abs(top);
             top = 0;
         }
-        if ((left + width) > self._originalImageWidth) {
+        if ((left + width) > fix(self._originalImageWidth)) {
             width = self._originalImageWidth - left;
             outWidth = width;
         }
-        if ((top + height) > self._originalImageHeight) {
+        if ((top + height) > fix(self._originalImageHeight)) {
             height = self._originalImageHeight - top;
             outHeight = height;
         }
